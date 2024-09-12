@@ -5,5 +5,6 @@
     #include <stdlib.h>
     #include <stdio.h>
     #include "struct.h"
+    #include "function.h"
 
     #endif /* MAIN_H_ */
