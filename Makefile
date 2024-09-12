@@ -1,6 +1,6 @@
 CC = gcc
 
-SRC		=	
+SRC		=	src/main.c \
 
 OBJ	=	$(SRC:src/%.c=obj/%.o)
 
@@ -11,7 +11,7 @@ CFLAGS	+=	-Wall -Wextra -I./include -g
 all: 	$(NAME)
 
 $(NAME):	 $(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
+	$(CC) -o $(NAME) $(OBJ)
 
 obj/%.o: src/%.c
 	mkdir -p $(dir $@)
