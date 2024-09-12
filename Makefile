@@ -1,6 +1,7 @@
 CC = gcc
 
-SRC		=	src/main.c \
+SRC		=	src/map.c \
+			src/main.c \
 
 OBJ	=	$(SRC:src/%.c=obj/%.o)
 
